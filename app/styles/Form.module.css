@@ -1,0 +1,122 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: linear-gradient(135deg, #e6f7ff, #ffffff);
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+}
+
+.formCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 25px 20px;
+    border: 2px solid #0097e3;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: fit-content;
+}
+
+.formCont:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 151, 227, 0.3);
+}
+
+.covertextarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 12px;
+    border: 2px solid #0097e3;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    resize: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+.covertextarea textarea{
+    outline: none;
+    border: none;
+    height: 100px;
+    resize: none;
+}
+
+.covertextarea p{
+    text-align: right;
+    padding:5px;
+}
+
+.formCont textarea:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+
+
+.formCont input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.formCont button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0097e3, #007bbd);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.formCont button:hover {
+    background: linear-gradient(135deg, #007bbd, #005f8d);
+    transform: scale(1.03);
+}
+
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-top: 10px;
+    background-color: rgba(255, 0, 0, 0.397);
+    padding: 10px;
+    border-radius: 20px;
+    margin:10px;
+}
+
+.logoAlert{
+    color:red;
+    margin-right: 10px;
+}
+
+.coverInput{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0097e3;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+.coverInput input{
+    outline: none;
+    border: none;
+}

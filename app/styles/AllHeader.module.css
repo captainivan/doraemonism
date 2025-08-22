@@ -1,0 +1,24 @@
+.designTimeLineHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Allcontainer h1 {
+    font-size: 38px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+}
+.design {
+    width: 40%;
+    height: 5px;
+    background-color: #0097e3;
+    margin: 10px;
+    border-radius: 80px;
+}
+.Allcontainer{
+    width: 100%;
+}

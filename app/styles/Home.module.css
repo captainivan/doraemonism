@@ -1,0 +1,130 @@
+.container {
+   position: relative;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow: hidden;
+ }
+ 
+ /* Background wrapper */
+ .bgWrap {
+   position: absolute;
+   inset: 0;
+   z-index: -1; /* push behind content */
+ }
+ 
+ .bgImage {
+   object-fit: cover;
+ }
+ 
+ /* --- Hero heading content --- */
+ .heading {
+   position: absolute;       /* 👈 pin to bottom right */
+   bottom: 40px;             /* distance from bottom */
+   right: 40px;              /* distance from right */
+   max-width: 500px;         /* control text width */
+   padding: 20px;
+   text-align: left;         /* 👈 text aligns left */
+   z-index: 1;
+ }
+ 
+ .heading h1 {
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 1.2;
+ }
+ 
+ .heading p {
+   font-size: 18px;
+   font-style: italic;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-top: 8px;
+ }
+ 
+ /* --- CTA Button --- */
+ .linked {
+   display: flex;
+   align-items: center;
+   background-color: black;
+   color: white;
+   padding: 12px 20px;
+   margin-top: 16px;
+   border-radius: 50px;
+   width: fit-content;
+   font-weight: 500;
+   transition: all 0.3s ease;
+ }
+ 
+ .icon {
+   margin-left: 10px;
+   display: inline-block;
+   transition: transform 0.3s ease;
+ }
+ 
+ @keyframes wiggleX {
+   0% { transform: translateX(0); }
+   30% { transform: translateX(4px); }
+   60% { transform: translateX(-2px); }
+   90% { transform: translateX(0); }
+ }
+ 
+ .linked:hover {
+   box-shadow:
+     0 0 60px rgb(255, 217, 0),
+     0 0 60px rgb(255, 204, 0),
+     inset 0 0 0px rgb(255, 174, 82);
+   transition-duration: 0.8s;
+ }
+ 
+ .linked:hover .icon {
+   animation: wiggleX 0.6s ease-in-out infinite;
+ }
+ 
+ /* --- 📱 Responsive tweaks --- */
+ 
+ /* Tablets */
+ @media (max-width: 1024px) {
+   .heading {
+     bottom: 30px;
+     right: 30px;
+     max-width: 400px;
+   }
+ 
+   .heading h1 {
+     font-size: 36px;
+   }
+ 
+   .heading p {
+     font-size: 16px;
+   }
+ }
+ 
+ /* Phones */
+ @media (max-width: 600px) {
+   .heading {
+     bottom: 20px;
+     right: 20px;
+     max-width: 90%;   /* allow wider text on small screens */
+     padding: 10px;
+   }
+ 
+   .heading h1 {
+     font-size: 28px;
+     line-height: 1.3;
+   }
+ 
+   .heading p {
+     font-size: 14px;
+   }
+ 
+   .linked {
+     font-size: 14px;
+     padding: 10px 16px;
+   }
+ 
+   .icon {
+     margin-left: 6px;
+   }
+ }
+ 

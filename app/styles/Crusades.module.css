@@ -1,0 +1,343 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.left,
+.right {
+    height: 100vh;
+    width: 45%;
+    background-color: #fffff0;
+}
+
+.warflag {
+    background-color: #CE0000;
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 100px solid #fffff0;
+}
+
+.justadd {
+    width: 100%;
+    background-color: white;
+    height: 30px;
+}
+
+.vsimg {
+    margin-bottom: 80px;
+}
+
+.warflag h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pictureCrusade {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+
+.pictureCrusadeTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: column;
+}
+
+.infoDiv {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.rod {
+    height: 15px;
+    width: 180px;
+    background-color: rgb(167, 72, 72);
+    border-radius: 50px;
+}
+
+.flag,
+.flagTwo {
+    width: 150px;
+    background-color: #FF4343;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.longRod {
+    height: 240px;
+    width: 15px;
+    background-color: rgb(167, 72, 72);
+}
+
+.flagTwo {
+    background-color: #4ACFFF;
+}
+
+.flag h3,
+.flagTwo h3 {
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+.flag p,
+.flagTwo p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+}
+
+.flag ul,
+.flagTwo ul {
+    margin-top: 10px;
+}
+
+.flag ul li,
+.flagTwo ul li {
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    font-weight: 600;
+}
+
+.buttonDiv {
+    padding: 10px;
+}
+
+.ccheckButton {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 18px;
+    background: linear-gradient(90deg, #ffcb40, #ffd863);
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    font-weight: 600;
+    box-shadow: 0 0 12px rgba(255, 203, 64, 0.6), 0 0 20px rgba(255, 203, 64, 0.4);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    animation: glowPulse 2s infinite ease-in-out;
+}
+
+.ccheckButton:hover {
+    background: linear-gradient(90deg, #111, #333);
+    color: white;
+    border: 2px solid #ffcb40;
+    box-shadow: 0 0 18px #ffcb40, 0 0 28px rgba(255, 203, 64, 0.8);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.ccheckButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: skewX(-25deg);
+}
+
+.ccheckButton:hover::before {
+    animation: shine 1.2s ease forwards;
+}
+
+@keyframes glowPulse {
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 12px rgba(255, 203, 64, 0.6),
+            0 0 20px rgba(255, 203, 64, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 203, 64, 0.9),
+            0 0 35px rgba(255, 203, 64, 0.7);
+    }
+}
+
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+
+.containerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffe3;
+    overflow-x: hidden;
+    display: none;
+}
+
+.midDiv {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodTwo {
+    width: 130px;
+    height: 15px;
+    background-color: rgb(167, 72, 72);
+    border-radius: 50px;
+}
+
+.flagTwoTwo,
+.flagTwoOne {
+    width: 120px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.flagTwoTwo ul,
+.flagTwoOne ul {
+    margin-top: 10px;
+}
+
+.flagTwoOne ul li,
+.flagTwoTwo ul li {
+    font-weight: 700;
+}
+
+.flagTwoTwo {
+    background-color: #008ec2;
+}
+
+.flagTwoOne {
+    background-color: #c92525;
+    color: white;
+}
+
+.infoDivTwoOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.warflagTwo {
+    background-color: #CE0000;
+    height: 300px;
+    margin: 10px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.triangleTwo {
+    margin-top: 110px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #ffffe3;
+}
+
+.buttonDivTwo {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.ccheckButtonTwo {
+    cursor: pointer;
+    font-size: 10px;
+    background: linear-gradient(90deg, #ffcb40, #ffd863);
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    font-weight: 600;
+    box-shadow: 0 0 12px rgba(255, 203, 64, 0.6), 0 0 20px rgba(255, 203, 64, 0.4);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    animation: glowPulse 2s infinite ease-in-out;
+}
+
+.ccheckButtonTwo:hover {
+    background: linear-gradient(90deg, #111, #333);
+    color: white;
+    border: 2px solid #ffcb40;
+    box-shadow: 0 0 18px #ffcb40, 0 0 28px rgba(255, 203, 64, 0.8);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.ccheckButtonTwo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: skewX(-25deg);
+}
+
+.ccheckButtonTwo:hover::before {
+    animation: shine 1.2s ease forwards;
+}
+
+@media (max-width: 768px) {
+    .containerTwo{
+        display: block;
+    }
+    .container{
+        display: none;
+    }
+}
