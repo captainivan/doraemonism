@@ -21,10 +21,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={cinzel.className}>
       <Script
-          strategy="afterInteractive"
-          src="https://cloud.umami.is/script.js"
-          data-website-id="fed6926e-00f5-49fd-9e12-d4c9c13a990f"
-        />
+  src="https://cloud.umami.is/script.js"
+  data-website-id="fed6926e-00f5-49fd-9e12-d4c9c13a990f"
+  strategy="afterInteractive"
+  defer
+/>
+
         <Provider>
           {children}
         </Provider>
