@@ -17,27 +17,27 @@ const mobileEvents = [
     label: "Before Time"
   },
   {
-    title: "Crossing the Time Tunnel",
-    desc: "On that day, the bamboo-copter carried not just a cat, but hope itself.",
-    img: dorayakiThree,
-    label: "Year 0 of Dora Era"
-  },
-  {
-    title: "From Room to Realm",
-    desc: "The teachings spread to friends, neighbors, and generations.",
-    img: dorayakiFive,
-    label: "First Miracle"
-  },
-  {
     title: "Sacred Assignment",
     desc: "Doraemon receives the mission to protect the mortal Nobita.",
     img: dorayakiTwo,
+    label: " Year 0 of Dora Era"
+  },
+  {
+    title: "Crossing the Time Tunnel",
+    desc: "On that day, the bamboo-copter carried not just a cat, but hope itself.",
+    img: dorayakiThree,
     label: "Descent to Earth"
   },
   {
     title: "The Gadget of Mercy",
     desc: "With kindness and cleverness, the mortal’s fate was reshaped.",
     img: dorayakiFour,
+    label: " First Miracle"
+  },
+  {
+    title: "From Room to Realm",
+    desc: "The teachings spread to friends, neighbors, and generations.",
+    img: dorayakiFive,
     label: "Spread of Doraemonism"
   }
 ]
