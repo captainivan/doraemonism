@@ -10,25 +10,26 @@ const Followers = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false)
     const followersData = [
-        { title: "Dora Devotee", color: "bg-blue-200" },
-        { title: "Gadget Fan", color: "bg-pink-200" },
-        { title: "Nobi Follower", color: "bg-purple-200" },
-        { title: "Blue Believer", color: "bg-green-200" },
-        { title: "Time Traveler", color: "bg-yellow-200" },
-        { title: "Catbot Companion", color: "bg-indigo-200" },
-        { title: "Future Fan", color: "bg-teal-200" },
-        { title: "Robot Admirer", color: "bg-rose-200" },
-        { title: "Dora Disciple", color: "bg-orange-200" },
-        { title: "Anywhere Adventurer", color: "bg-cyan-200" }
+        { title: "Blue Devotee", color: "bg-blue-200" },
+        { title: "Sacred Gadgeteer", color: "bg-pink-200" },
+        { title: "Nobi Disciple", color: "bg-purple-200" },
+        { title: "Eternal Believer", color: "bg-green-200" },
+        { title: "Time Voyager", color: "bg-yellow-200" },
+        { title: "Divine Catbot", color: "bg-indigo-200" },
+        { title: "Future Seeker", color: "bg-teal-200" },
+        { title: "Cosmic Gadgeteer", color: "bg-rose-200" },
+        { title: "Blessed Dora", color: "bg-orange-200" },
+        { title: "Anywhere Pilgrim", color: "bg-cyan-200" }
     ];
 
     useEffect(() => {
         const data = async () => {
+            setLoading(true)
             try {
                 const api = await fetch("/sendMessage");
                 const res = await api.json();
-                console.log(res);
                 setData(res.data)
+                setLoading(false)
             } catch (error) {
                 console.log(error)
             }
@@ -51,10 +52,10 @@ const Followers = () => {
                                 <div className={styles.messages} key={i} >
                                     <div className={styles.upperMessage}>
                                         <div className={styles.lowerUpperInfo}>
-                                            <div className={`h-12 w-12  rounded-full mr-2.5 flex justify-center items-center ${followersData[Math.floor(Math.random() * 10)].color}`}><User /></div>
+                                            <div className={`h-12 w-12  rounded-full mr-2.5 flex justify-center items-center ${followersData[Math.floor(Math.random() * followersData.length)].color}`}><User /></div>
                                             <div>
                                                 <h3>{e.name}</h3>
-                                                <p>{followersData[Math.floor(Math.random() * 10)].title}</p>
+                                                <p>{followersData[Math.floor(Math.random() * followersData.length)].title}</p>
                                             </div>
                                         </div>
                                     </div>
