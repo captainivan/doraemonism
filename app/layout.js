@@ -19,13 +19,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="yszqlDoRKS6U1tdVLGVIIxKyWd52VER3wa9TD6S5Psw" />
+      </head>
       <body className={cinzel.className}>
-      <Script
-  src="https://cloud.umami.is/script.js"
-  data-website-id="fed6926e-00f5-49fd-9e12-d4c9c13a990f"
-  strategy="afterInteractive"
-  defer
-/>
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="fed6926e-00f5-49fd-9e12-d4c9c13a990f"
+          strategy="afterInteractive"
+          defer
+        />
 
         <Provider>
           {children}
