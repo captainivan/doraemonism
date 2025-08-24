@@ -5,7 +5,7 @@ import Message from "../models/Message";
 export async function POST(req) {
     const body = await req.json();
     if (body.postType === "passCheck") {
-        if (body.password === "iLoveDORAEMON") {
+        if (body.password === process.env.PASSKEY) {
             return NextResponse.json({ message: "Auth sucessfull" })
         } else {
             return NextResponse.json({ message: "Auth Failed" })
