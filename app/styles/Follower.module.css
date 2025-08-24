@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .message {
     column-count: 3;
     /* number of columns */
@@ -142,4 +143,22 @@
     .newmessage {
         justify-content: center;
     }
+}
+
+.checkPaas {
+    font-family: Arial !important;
+}
+
+.deleteMod {
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.353);
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    
 }
