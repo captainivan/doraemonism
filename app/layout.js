@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="yszqlDoRKS6U1tdVLGVIIxKyWd52VER3wa9TD6S5Psw" />
+        <meta name="google-adsense-account" content="ca-pub-7154543574051359"></meta>
       </head>
       <body className={cinzel.className}>
         <Script
