@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.3.0",
+    "@aviral-zype/video-js-vast-plugin": "^1.1.0",
+    "@filmgardi/videojs-vast": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -21,7 +23,11 @@
     "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",
     "react-snap-scroll": "^0.0.5",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "video.js": "^8.23.4",
+    "videojs-contrib-ads": "^7.5.2",
+    "videojs-ima": "^2.4.0",
+    "videojs-vast-vpaid": "^3.0.0-beta.8"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.12.1",
